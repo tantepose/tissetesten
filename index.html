@@ -1,26 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tissetesten 💦</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
     
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    </head>
+    <div id="app">
+        <h1>Hvilket kjønn er du? 😅 Ta testen! 🧪</h1>
+        <p>Når urinblæra di er full, må du på dossen for å...</p>
 
-    <body>
+        <input v-model="word" placeholder="skriv inn verb">
+            <p v-if="word==='tisse'">Du er en kvinne! 👩</p>            
+            <p v-else-if="word==='pisse'">Du er en mann! 👨</p>        
+            <p v-else-if="word==='bæsje'">Du er en idiot! 💩</p>    
+            <p v-else>Du er en... 🤔</p>
+
+    </div>
         
-        <div id="app">
-            <h1>Hvilket kjønn er du? 😅 Ta testen! 🧪</h1>
-            <p>Når urinblæra di er full, må du på dossen for å...</p>
-
-            <input v-model="word" placeholder="skriv inn verb">
-                <p v-if="word==='tisse'">Du er en kvinne! 👩</p>            
-                <p v-else-if="word==='pisse'">Du er en mann! 👨</p>        
-                <p v-else-if="word==='bæsje'">Du er en idiot! 💩</p>    
-                <p v-else>Du er en... 🤔</p>
-
-        </div>
-            
-        <script src="script.js"></script>
-
-    </body>
-
+    <script src="script.js"></script>
+</body>
 </html>
