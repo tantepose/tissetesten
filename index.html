@@ -1,0 +1,26 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="app">
+            <h1>Hvilket kjønn er du? 😅 Ta testen! 🧪</h1>
+            <p>Når urinblæra di er full, må du på dossen for å...</p>
+
+            <input v-model="word">
+                <p v-if="word==='tisse'">Du er en kvinne! 👩</p>            
+                <p v-else-if="word==='pisse'">Du er en mann! 👨</p>        
+                <p v-else-if="word==='bæsje'">Du er en idiot! 💩</p>    
+                <p v-else>Du er en... 🤔</p>
+
+        </div>
+            
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
