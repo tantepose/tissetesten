@@ -17,9 +17,9 @@
         <p>Når urinblæra di er full, må du på dossen for å...</p>
 
         <input v-model="word" placeholder="skriv inn verb">
-            <p v-if="word==='tisse'">Du er en kvinne! 👩</p>            
-            <p v-else-if="word==='pisse'">Du er en mann! 👨</p>        
-            <p v-else-if="word==='bæsje'">Du er en idiot! 💩</p>    
+            <p v-if="word==='tisse' || word==='Tisse'">Du er en kvinne! 👩</p>            
+            <p v-else-if="word==='pisse' || word==='Pisse'">Du er en mann! 👨</p>        
+            <p v-else-if="word==='bæsje' || word==='Bæsje'">Du er en idiot! 💩</p>    
             <p v-else>Du er en... 🤔</p>
 
     </div>
